@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<meta name="description" content="Web Tutorials">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="Liang">
+<style>
+ body
+{
+background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTAlIyJhrsE_Kf1t4cqUz2EkQChiMRPPPmig&usqp=CAU");  
+background-repeat:no-repeat;
+background-size: cover;
+</style>
+<body>
+<h1>密度是指一物質單位體積下的質量，常用希臘字母ρ或是英文字母D（Density）表示</h1>
+
+<h1>在數學上，密度定義為質量除以體積的商。 及物體的質量與體積的比值： 其中ρ為密度，mass為質量，Volume為體積。</h1>
+
+
+<form>
+請輸入體積 (立方公尺): <input type="text" id="height">
+</form>
+<form>
+請輸入質量 (公斤): <input type="text" id="weight">
+</form>
+<form>
+請輸入物體名稱 : <input type="text" id="name">
+</form>
+<p id="Density"</p>
+<button type="button" onclick="cal()">Density</button>
+<
+
+<script>
+function cal(){
+var height = document.getElementById("height").value;
+var weight = document.getElementById("weight").value;
+var density = weight/height;
+document.getElementById("Density").innerHTML= density;
+var name = document.getElementById("name").value;
+alert("Hello, " + document.getElementById("name").value+"你的density是 " + density);
+
+}
+
+
+
+</script>
+</body>
+</html>
